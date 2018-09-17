@@ -1,22 +1,101 @@
 <!doctype html>
 <html lang="en">
-  <head>
-    <!-- Required meta tags -->
-    <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+	<title>Hello, world!</title>
+	<style>
+		/* p    {font-size: 0.8rem} */
+		body {
+			background-color:#4b4b4b;
+			color:#333333;
+		}
+		
+		.bg-header {
+			background-color: #3ac1cc;
+			color: white;
+			border-radius: 10px 10px 0 0;
+		}
+		
+		.bg-main {
+			background-color:#fefcfa;
+			border-radius: 0 0 10px 10px;
+		}
+		
+		.color-green {
+			color: #55cc7e;		
+		}
+		
+		.container-width-550 {
+			max-width: 550px;
+		}
+		
+		.bg-green {
+			background-color: #55cc7e;
+		}
+		
+		.font-size-1 {
+			font-size: 0.6rem;
+		}
+		
+		.font-size-2 {
+			font-size: 0.7rem;
+		}
+		
+	</style>
+</head>
+<body>
 
-    <!-- Bootstrap CSS -->
-    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+<div class="container container-width-550">
 
-    <title>Hello, world!</title>
-  </head>
-  <body>
-    <h1>Hello, world!</h1>
+	
 
-    <!-- Optional JavaScript -->
-    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
-    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
-    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
-  </body>
+	<div class="bg-header p-2 mt-2 text-center">
+	<h4 class="m-0 font-weight-bold">GET A <u>FREE</u> COPY OF<br>THE 2 WEEK DIET!</h4>
+	</div>
+
+	<div class="bg-main p-2">
+		
+		<div class="row mb-2 px-2">
+			<div class="col text-center">
+				<img src="freedownload2.png" class="rounded" style="width:160px">
+			</div>
+
+			<div class="col text-center">
+				<p>And discover how you can easily <strong class="color-green">lose at least 6 pounds (3 kilos)</strong> of body fat <u>starting today!</u></p>
+				<p>Just enter your details below to claim your FREE book.</p>
+			</div>
+		</div>
+		
+		<form action="https://app.getresponse.com/add_subscriber.html" accept-charset="utf-8" method="post">	
+		<!-- <form action="#" accept-charset="utf-8" method="post">	 -->
+			<div class="form-group p-2">
+
+				<!-- Email field (required) -->
+				<input class="form-control mb-1" type="text" name="email" placeholder="enter your email address here..." required="true">
+				<div class="form-check mb-1">
+					<input class="form-check-input" id="webform_consent#p1e_0" type="checkbox" name="webform[consent#P1e-ver#xeC]" value="true" required="true">
+					<label class="form-check-label font-size-1" for="webform_consent#p1e_0">
+						Yes, I want to receive messages to my email address. You can resign at any time by clicking the "unsubscribe" link in the message you received. <a href="http://blog.dooled.com/datenschutz" target="_blank" rel="nofollow">Read more</a>
+					</label>
+				</div>
+				<!-- List token -->
+				<!-- Get the token at: https://app.getresponse.com/campaign_list.html -->
+				<input class="form-control" type="hidden" name="campaign_token" value="a4FSb" />
+				<!-- Subscriber button -->
+				<input class="form-control btn btn-lg bg-green text-white font-weight-bold" type="submit" value="CLAIM MY COPY NOW!"/>
+			
+			</div>
+		</form>
+		<div class="text-center font-size-2">
+			<p>We promise to not use your email for spam!<br>Free book provided immediately after entering details.</p>
+		</div>
+
+	</div>
+		
+</div>
+
+
+</body>
 </html>
